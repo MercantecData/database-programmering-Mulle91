@@ -13,8 +13,10 @@
             if($row["username"] == $userN && $row["password"] == $pass) 
             {
                 echo "You are currect logged in " . $row["username"];
+                header ("location: Mypage.php");
             } else {
                 echo "It's not the correct password or username";
+
             }
             //echo "id: " . $row["id"]. " - Name: " . $row["userName"]. " " . $row["password"]. "<br>";
         }
